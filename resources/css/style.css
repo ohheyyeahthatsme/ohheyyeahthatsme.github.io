@@ -21,394 +21,89 @@ a {
 }
 
 a:hover {
-	color: #cd545b; /* PMS 7418C */
+	color: #DC8633; /* PMS 7413C */
 	text-decoration: underline;
 }
 
-h1, h2, h3, h4, h5, h6 {
+strong {
 	font-weight: 700;
+}
+
+h1, h2, h3, h4, h5, h6 {
 	line-height: 1.25;
-	margin-bottom: 1rem;
+	font-weight: 700;
 }
 
 h1 {
-	font-size: 3rem;
+	font-size: 3.375rem;
 }
 
 h2 {
-	font-size: 2rem;
+	font-size: 2.25rem;
 }
 
-h3 {
+p.large {
 	font-size: 1.5rem;
 }
 
-p {
-	margin-bottom: 0.5rem;
+ul {
+	line-height: 2;
 }
 
-
-/* Button styles */
-
-.btn {
-	padding: 0.5rem 1rem;
-	border-radius: 0.25rem;
-	text-align: center;
-	display: inline-block;
-	transition: background-color 150ms ease-in; 
+ul li i.fab, i.fas {
+	margin-right: 1rem;
 }
 
-.btn-primary {
-	color: white;
-	font-weight: 700;
-	background-color: #F64747;
+/* Readable text */
+h1, h2, h3, h4, h5, h6, p, ul {
+	max-width: 36em;
+	margin-bottom: 1rem;
 }
 
-.btn-primary:hover {
-	color: white;
-	background-color: hsl(306,50%,50%);
-	text-decoration: none;
-}
+/* Image styles */
 
-.btn-clear {
-	color: hsl(306,50%,15%);
-	font-weight: 700;
-	background-color: transparent;
-}
-
-.btn-clear:hover {
-	background-color: hsl(306,50%,95%);
-	text-decoration: none;
-	color: hsl(306,50%,30%);
-}
-
-.btn-clear .em {
+img {
 	display: block;
-}
-
-.btn-clear img {
-	display: block;
-	height: 1.5em;
-	width: auto;
-}
-
-.btn-wide {
 	width: 100%;
+	height: auto;
+	margin-bottom: 1rem;
+	border-radius: .5rem;
+	transition: all 150ms ease-in;
+}
+
+img:hover {
+	opacity: 0.8;
 }
 
 
-/* CONTAINERS */
+/* Spacing */
 
 .container {
 	display: block;
-	max-width: 60rem; /* 960px */
-	height: 100%;
-	margin: 0 1rem;
+	margin: 2rem 1rem;
 }
 
 section {
-	padding: 2rem 0;
-}
-
-
-/* Common flex groups */
-
-.flex {
-	display: flex;
-}
-
-
-/* Header styles */
-
-header {
-	height: 4rem;
-	background-color: white;
-	box-shadow: 0 1px 4px rgba(0,0,0,0.1);
-	position: fixed;
-	z-index: 10;
-	width: 100%;
-}
-
-header .flex, footer .flex {
-	align-items: center;
-	justify-content: space-between;
-}
-
-#logo, #logo img {
-	width: auto;
-	height: 1.5rem;
-}
-
-
-/* Footer styles */
-
-footer {
-	position: relative;
-	top: 4rem;
-	border-top: 1px solid rgba(0,0,0,0.1);
-	padding: 1rem 0;
-}
-
-
-/* Main section styles */
-
-main {
-	position: relative;
-	top: 4rem;
-}
-
-
-/* Make images fit their width to container */
-
-.fit-width {
-	width: 100%;
-	height: auto;
-	display: block;
-}
-
-
-/* Hero section styles */
-
-.section-hero {
-	background-image: url(../images/hero.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
-	height: 24rem;
-}
-
-.section-hero h1, .section-hero h3 {
-	text-shadow: 1px 1px 1px white;
-}
-
-.section-hero .flex {
-	justify-content: flex-end;
-	align-items: center;
-}
-
-
-/* Articles section styles */
-
-.article-item {
-	transition: all 150ms ease-in-out;
 	margin-bottom: 2rem;
 }
 
-.col-40 .article-item:last-child {
-	margin-bottom: 0;
-}
-
-.article-item h3 a {
-	color: hsl(306,50%,15%);
-}
-
-.article-item figure {
-	height: 16rem;
-	overflow: hidden;
-}
-
-.article-item figcaption {
-	padding-top: 1rem;
-}
-
-
-/* Classes section styles */
-
-.section-classes {
-	background-color: #f2f2f2;
-}
-
-.class-item {
-	background-color: white;
-	transition: box-shadow 150ms ease-in;
-}
-
-.class-item:hover {
-	box-shadow: 0 0 20px rgba(0,0,0,0.2);
-}
-
-.class-item figure {
-	height: 8rem;
-	overflow: hidden;
-}
-
-.class-item figcaption {
-	padding: 1rem;
-}
-
-.class-item h3, p {
-	margin-bottom: 0;
-}
-
-/* Graduates section */
-
-.section-grads iframe {
-	width: 100%;
-}
-
-
-
-
-/* RESPONSIVE STYLES */
-
-
-
-/* HEADER & FOOTER */
-
-/* SMALL */
-@media only screen and (max-width: 640px) {
-	.nav-lg, #logo, footer nav {
-		display: none;
-	}
-
-	header nav {
-		width: 100%;
-	}
-
-	.nav-sm {
-		display: flex;
-		justify-content: space-around;
-	}
-
-}
-
-/* LARGE */
-@media only screen and (min-width: 640px) {
-	.nav-sm {
-		display: none;
-	}
-
-}
-
-
-
-
-/* CONTAINERS */
-
-/* More side margin above 640px until max-width of 960px */
-@media only screen and (min-width: 641px) and (max-width: 1008px) {
+/* Above 640px but below 960px */
+@media only screen and (min-width: 673px) and (max-width: 992px) {
 	.container {
-		margin: 0 1.5rem;
+		max-width: 40rem; /* 640px */
+		margin: 2rem auto;
 	}
 }
 
-/* Horizontally centered after max-width */
-@media only screen and (min-width: 1009px) {
+/* Above 960px */
+@media only screen and (min-width: 993px) {
 	.container {
-		margin: 0 auto;
+		max-width: 60rem; /* 960px */
+		margin: 4rem auto;
 	}
-}
 
-/* Increase section top/bottom padding to match container left/right margin */
-@media only screen and (min-width: 641px) {
 	section {
-		padding: 1.5rem 0;
+		margin-bottom: 4rem;
 	}
 }
 
-
-
-/* SMALL SCREENS */
-
-@media only screen and (max-width: 768px) {
-
-	/* Hide all on SMALL screens */
-
-	#twitter, .class-item figure, .class-item figcaption p {
-		display: none;
-	}
-
-	/* Columns */
-
-	.col-40, .col-60 {
-		width: 100%;
-	}
-
-	/* Classes section */
-
-	.class-item h3 {
-		text-align: center;
-	}
-
-	.class-item {
-		margin-bottom: 0.5rem;
-	}
-
-	.class-item:last-child {
-		margin-bottom: 0;
-	}
-
-}
-
-
-/* LARGE SCREENS */
-
-@media only screen and (min-width: 769px) {
-
-	/* Columns */
-
-	.col-40 {
-		width: 40%;
-		padding-left: 1.5rem;
-	}
-
-	.col-60 {
-		width: 60%;
-	}
-
-	/* Articles & Grads sections */
-
-	.section-articles, .section-grads .cols {
-		display: flex;
-	}
-
-	.section-articles .col-60 {
-		padding-top: 1rem;
-	}
-
-	.article-item.featured h3 {
-		font-size: 2rem;
-	}
-
-	.article-item.featured figure {
-		height: 20rem;
-	}
-
-	.article-item.feed {
-		display: flex;
-		border-bottom: 1px solid rgba(0,0,0,0.1);
-		padding: 1rem;
-		margin-bottom: 0;
-	}
-
-	.article-item.feed:last-child {
-		border-bottom: none;
-	}
-
-	.article-item.feed:hover {
-		background-color: hsl(306,50%,95%);
-	}
-
-	.article-item.feed figure {
-		width: 6rem;
-		height: 6rem;
-		margin-right: 1rem;
-	}
-
-	.article-item.feed figcaption {
-		padding-top: 0;
-		width: 65%;
-	}
-
-
-	/* Classes section */
-
-	.section-classes .classes {
-		display: flex;
-	}
-
-	.class-item {
-		flex: 1 1 16rem;
-		margin: 0.5rem;
-	}
-
-}
