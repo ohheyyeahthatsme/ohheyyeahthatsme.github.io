@@ -46,6 +46,10 @@ p.large {
 	font-size: 1.5rem;
 }
 
+header i.fab, i.fas {
+	margin-right: 0.25rem;
+}
+
 ul {
 	line-height: 2;
 }
