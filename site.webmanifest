@@ -1,13 +1,14 @@
 {
-    "name": "Katie Riley",
+    "name": "Katie Riley, Product Designer",
+    "short_name": "Katie Riley, Product Designer",
     "icons": [
         {
-            "src": "/android-chrome-192x192.png?v=E6j4e4j0We",
+            "src": "/android-chrome-192x192.png?v=rMqE47AYXM",
             "sizes": "192x192",
             "type": "image/png"
         },
         {
-            "src": "/android-chrome-512x512.png?v=E6j4e4j0We",
+            "src": "/android-chrome-512x512.png?v=rMqE47AYXM",
             "sizes": "512x512",
             "type": "image/png"
         }
