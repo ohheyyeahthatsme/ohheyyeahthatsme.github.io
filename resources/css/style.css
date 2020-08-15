@@ -26,9 +26,8 @@ a {
 	transition: all 150ms ease-in;
 }
 
-a:hover, 
-.icons > a:hover {
-	color: #DD4600;
+a:hover {
+	color: #DD6000;
 }
 
 strong {
@@ -70,27 +69,26 @@ h2 {
 	margin: 0 .25rem;
 }
 
+.icon, .icon path {
+	width: 20px;
+	height: 20px;
+	transition: all 150ms ease-in;
+}
+
+.icon:hover {
+  transform: scale(1.05);
+}
+
+.icon:hover path,
+.icons a:focus svg path {
+  fill: #DD6000;
+}
+
 
 /* Readable text */
 
 h1, h2, h3, h4, h5, h6, p, ul {
 	margin-bottom: 1rem;
-}
-
-
-/* Image styles */
-
-img {
-	display: block;
-	width: 100%;
-	height: auto;
-	margin-bottom: 1rem;
-	border-radius: .5rem;
-	transition: all 150ms ease-in;
-}
-
-img:hover {
-	opacity: 0.8;
 }
 
 
