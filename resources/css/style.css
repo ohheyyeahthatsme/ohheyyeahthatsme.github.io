@@ -2,6 +2,11 @@
 	box-sizing: border-box;
 }
 
+img, svg {
+  display: block;
+  vertical-align: middle;
+}
+
 /* Font styles */
 
 html {
@@ -22,7 +27,7 @@ a {
 }
 
 a:hover, 
-p.icons > a:hover {
+.icons > a:hover {
 	color: #DD4600;
 }
 
@@ -48,25 +53,27 @@ h2 {
 	text-transform: lowercase;
 }
 
-p.icons {
-	font-size: 1.5rem;
-}
-
-p.icons > a {
-	margin-right: 0.125rem;
-	text-decoration: none;
-	color: #FED0B7;
-}
-
 .center-align {
 	text-align: center;
+}
+
+.icons {
+	display: flex;
+	justify-content: center;
+}
+
+.icons > a {
+	text-decoration: none;
+}
+
+.icons > li {
+	margin: 0 .25rem;
 }
 
 
 /* Readable text */
 
-h1, h2, h3, h4, h5, h6, p, ul, li {
-	/*max-width: 36em;*/
+h1, h2, h3, h4, h5, h6, p, ul {
 	margin-bottom: 1rem;
 }
 
