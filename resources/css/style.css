@@ -21,8 +21,9 @@ a {
 	transition: all 150ms ease-in;
 }
 
-a:hover {
-	color: #DFAB3F;
+a:hover, 
+p.icons > a:hover {
+	color: #DD4600;
 }
 
 strong {
@@ -30,19 +31,20 @@ strong {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'Rubik Mono One', sans-serif;
+	font-family: 'Calistoga', Georgia, serif;
 	line-height: 1.25;
-	font-weight: 700;
-	color: #FED0B7;
+	font-weight: 400;
+	letter-spacing: 0.03em;
 }
 
 h1 {
-	font-size: 5rem;
-	color: #D3E4CF;
+	font-size: 6rem;
+	color: #212121;
 }
 
 h2 {
-	font-size: 1.5rem;
+	font-size: 1.75rem;
+	color: #FED0B7;
 }
 
 p.icons {
@@ -55,15 +57,15 @@ p.icons > a {
 	color: #FED0B7;
 }
 
-p.icons > a:hover {
-	color: #DFAB3F;
+.center-align {
+	text-align: center;
 }
 
 
 /* Readable text */
 
 h1, h2, h3, h4, h5, h6, p, ul, li {
-	max-width: 36em;
+	/*max-width: 36em;*/
 	margin-bottom: 1rem;
 }
 
