@@ -45,6 +45,7 @@ h1 {
 h2 {
 	font-size: 1.75rem;
 	color: #FED0B7;
+	text-transform: lowercase;
 }
 
 p.icons {
