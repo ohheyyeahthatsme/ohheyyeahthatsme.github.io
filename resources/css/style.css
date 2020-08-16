@@ -23,11 +23,11 @@ body {
 a {
 	text-decoration: underline;
 	color: #475C71;
-	transition: all 150ms ease-in;
 }
 
-a:hover {
+a:hover, a:focus {
 	color: #DD6000;
+	transition: color 200ms ease-out;
 }
 
 strong {
@@ -72,7 +72,7 @@ h2 {
 .icon, .icon path {
 	width: 20px;
 	height: 20px;
-	transition: all 150ms ease-in;
+	transition: all 200ms ease-out;
 }
 
 .icon:hover {
@@ -115,3 +115,27 @@ section {
 	}
 }
 
+/* Animation */
+.fade-in {
+	-webkit-animation: fade-in .8s ease-out forwards;
+	animation: fade-in .8s ease-out forwards;
+	opacity: 0;
+	-webkit-transform: translateY(1em);
+	transform: translateY(1em);
+}
+
+@-webkit-keyframes fade-in {
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none
+    }
+}
+
+@keyframes fade-in {
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none
+    }
+}
