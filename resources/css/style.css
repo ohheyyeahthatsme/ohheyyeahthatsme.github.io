@@ -2,6 +2,11 @@
 	box-sizing: border-box;
 }
 
+img, svg {
+  display: block;
+  vertical-align: middle;
+}
+
 /* Font styles */
 
 html {
@@ -21,9 +26,8 @@ a {
 	transition: all 150ms ease-in;
 }
 
-a:hover, 
-p.icons > a:hover {
-	color: #DD4600;
+a:hover {
+	color: #DD6000;
 }
 
 strong {
@@ -48,42 +52,43 @@ h2 {
 	text-transform: lowercase;
 }
 
-p.icons {
-	font-size: 1.5rem;
-}
-
-p.icons > a {
-	margin-right: 0.125rem;
-	text-decoration: none;
-	color: #FED0B7;
-}
-
 .center-align {
 	text-align: center;
+}
+
+.icons {
+	display: flex;
+	justify-content: center;
+}
+
+.icons > a {
+	text-decoration: none;
+}
+
+.icons > li {
+	margin: 0 .25rem;
+}
+
+.icon, .icon path {
+	width: 20px;
+	height: 20px;
+	transition: all 150ms ease-in;
+}
+
+.icon:hover {
+  transform: scale(1.05);
+}
+
+.icon:hover path,
+.icons a:focus svg path {
+  fill: #DD6000;
 }
 
 
 /* Readable text */
 
-h1, h2, h3, h4, h5, h6, p, ul, li {
-	/*max-width: 36em;*/
+h1, h2, h3, h4, h5, h6, p, ul {
 	margin-bottom: 1rem;
-}
-
-
-/* Image styles */
-
-img {
-	display: block;
-	width: 100%;
-	height: auto;
-	margin-bottom: 1rem;
-	border-radius: .5rem;
-	transition: all 150ms ease-in;
-}
-
-img:hover {
-	opacity: 0.8;
 }
 
 
